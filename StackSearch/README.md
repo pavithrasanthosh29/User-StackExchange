@@ -38,11 +38,11 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 ## App Screenshot
 
-![Alt text](/src/assets/images/stacksearch-app.png "StackSearch Screenshot")
+![Alt text](/StackSearch/src/assets/images/stacksearch-app.png "StackSearch Screenshot")
 
 ### Component Based Design
 
-![Alt text](/src/assets/images/stacksearch-components.png "StackSearch Components Design")
+![Alt text](/StackSearch/src/assets/images/stacksearch-components.png "StackSearch Components Design")
 
 ### Author
 
