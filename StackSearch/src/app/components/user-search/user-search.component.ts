@@ -1,12 +1,6 @@
 import { Component, OnInit, Output, EventEmitter } from "@angular/core";
 import { UserService } from "../../services/user.service";
-import {
-  AbstractControl,
-  FormBuilder,
-  FormGroup,
-  ValidationErrors,
-  Validators,
-} from "@angular/forms";
+import { FormBuilder, FormGroup, Validators } from "@angular/forms";
 import { UserListResponse } from "src/app/services/models/user-list-response.model";
 
 @Component({
@@ -14,6 +8,10 @@ import { UserListResponse } from "src/app/services/models/user-list-response.mod
   templateUrl: "./user-search.component.html",
   styleUrls: ["./user-search.component.css"],
 })
+
+/**
+ * Search StackExchange by Username
+ */
 export class UserSearchComponent implements OnInit {
   userList: UserListResponse;
   @Output() userListEvent = new EventEmitter<any>();

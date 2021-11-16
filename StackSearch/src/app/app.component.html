@@ -8,18 +8,7 @@
   <!-- user search -->
   <app-user-search (userListEvent)="getUsersResponse($event)"></app-user-search>
   <app-user-list [userList]="userList"></app-user-list>
-  <!-- Footer -->
-  <footer>
-    Stack Search - 2021 ||&nbsp;👩‍💻
-    <a
-      href="https://github.com/pavithrasanthosh29/User-StackExchange/"
-      target="_blank"
-      rel="noopener"
-    >
-      Pavithra Santhosh.
-    </a>
-  </footer>
-
+  <app-stacksearch-footer></app-stacksearch-footer>
   <svg
     id="clouds"
     alt="Gray Clouds Background"
@@ -37,5 +26,3 @@
     />
   </svg>
 </div>
-
-<router-outlet></router-outlet>
