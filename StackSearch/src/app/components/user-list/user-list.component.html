@@ -1,0 +1,40 @@
+<div *ngIf="users">
+  <div *ngIf="users.length > 0; else elseBlock">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">Avatar</th>
+          <th scope="col">Name</th>
+          <th scope="col">Reputation</th>
+          <th scope="col">Location</th>
+          <th scope="col">Link</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of users">
+          <th scope="row">
+            <img
+              src="{{ user.profile_image }}"
+              class="user"
+              alt="{{ user.display_name }}"
+            />
+          </th>
+          <td>{{ user.display_name }}</td>
+          <td>{{ user.reputation }}</td>
+          <td>{{ user.location }}</td>
+          <td>
+            <a href="{{ user.link }}" target="_blank"
+              ><img
+                src="../../../assets/images/url-link-icon.png"
+                width="20"
+                height="20"
+            /></a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <ng-template #elseBlock>
+    <h6>No data available!</h6>
+  </ng-template>
+</div>
